@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar 3 Tabel HTML</title>
+</head>
+<body>
+    <h1>Belajar 3 cara membuat tebel di HTML</h1>
+    <p>1. Contoh pembuatan tabel HTML</p>
+    <table border="1" width="100%">
+        <tbody>
+            <tr>
+                <td bgcolor="yellow" align="center">Baris 1 kolom 1</td>
+                <td>baris 1 kolom 2</td>
+            </tr>
+            <tr bgcolor="aqua">
+                <td>baris 2 kolom 1</td>
+                <td>baris 2 kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>2. contoh penggunaan cellpadding</p>
+    <table border="1" cellpadding="10">
+        <tbody>
+            <tr>
+                <td>Baris 1 kolom 1</td>
+                <td>baris 1 kolom 2</td>
+            </tr>
+            <tr>
+                <td>baris 2 kolom 1</td>
+                <td>baris 2 kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>3. contoh penggunaan cellspacing</p>
+    <table border="1" cellspacing="10">
+        <tbody>
+            <tr>
+                <td>Baris 1 kolom 1</td>
+                <td>baris 1 kolom 2</td>
+            </tr>
+            <tr>
+                <td>baris 2 kolom 1</td>
+                <td>baris 2 kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>4. contoh penggunaan colspan dan rowspan</p>
+    <table border="1">
+        <tr>
+            <th rowspan="2" bgcolor="yellow">Bulan</th>
+            <th colspan="2" bgcolor="#00ff00">Hasil Panen</th>
+            <th colspan="2" bgcolor="#0f0">hasil panen 2</th>
+        </tr>
+        <tr>
+            <th>padi</th>
+            <th>kacang</th>
+        </tr>
+        <tr>
+            <td>januari</td>
+            <td>500kg</td>
+            <td>231kg</td>
+        </tr>
+        <tr>
+            <td>februari</td>
+            <td>342kg</td>
+            <td>423kg</td>
+        </tr>
+        <tr>
+            <td>maret</td>
+            <td>432kg</td>
+            <td>324kg</td>
+        </tr>
+    </table>
+</body>
+</html>

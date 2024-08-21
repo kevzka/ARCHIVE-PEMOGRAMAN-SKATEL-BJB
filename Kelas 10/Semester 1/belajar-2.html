@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar 2 memasukan gambar, link dan membuat list HTML</title>
+    <style>
+        .gambar{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-image: url("images/images.jpeg");
+            background-size: cover;
+            animation: gambar 10s forwards infinite ease-in-out;
+        }
+
+        @keyframes gambar{
+            0% {
+                background-image: url("images/images.jpeg");
+            }
+            50% {
+                background-image: url("images/rem.jpg");
+            }
+            100% {
+                background-image: url("images/images.jpeg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar 2 : Gambar, Link dan List HTML</h1>
+
+    <h2>1. cara memasukkan gambar pada HTML</h2>
+    <p>Untuk itu HTML menyediakan element untuk menampilkan gambar pada halaman website kita. Untuk menampilkan gambar HTML menyediakan tag. yang harus di perhatikan adalah link gambar kita harus ada didalam satu folder dengan html yang kita buat</p>
+
+    <img src="" alt="waifu tidak ditemukan">
+    <img src="images/rem.jpg" alt="rem" width="300px">
+    <div class="gambar"></div><br>
+
+    <h2>2. Cara memasukan link</h2>
+    <p>Berfungsi untuk menambahkan alamat atau tautan yang akan berfungsi redirect halaman website yang kita buat ke alamat yang telah kita sisipkan. HTML link biasa dengan memanfaatkan element a href. berikut contoh pemogramannya</p>
+    <p>a. conntoh link internal</p>
+    <a href="belajar-1.html" target="_blank" title="akan diarahkan ke halaman belajar 1">buka link belajar 1</a>
+    <p>b. contoh link eksternal</p>
+    <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">link ke w3schools</a>
+
+    <h3>1. Ordered List</h3>
+    <p>Ordered List yaitu list yang dibuat secara berurutan dibuat dengan tag ol lalu di dalamnya diisi dengan item yang dimasukkan yang dibuat menggunakann tag li, berikut contoh penggunaan tag ol</p>
+    <ol  type="A">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ol  type="a">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ol  type="i">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <ol  type="I">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+
+    <h3>1. Unordered list</h3>
+    <p>unordered list yaitu list yang di buat secara tidak berurutan dibuat dengan tag ul lalu di dalamnya diisi dengan item yang dimasukkan yang di buat menggunakan tag li, berikut contoh penggunaan tag ul</p>
+    <ul type="disc">
+        <li>mangga</li>
+        <li>jeruk</li>
+        <li>apel</li>
+        <li>semangka</li>
+        <li>jambu</li>
+    </ul>
+    <ul type="squre">
+        <li>mangga</li>
+        <li>jeruk</li>
+        <li>apel</li>
+        <li>semangka</li>
+        <li>jambu</li>
+    </ul>
+    <ul type="circle">
+        <li>mangga</li>
+        <li>jeruk</li>
+        <li>apel</li>
+        <li>semangka</li>
+        <li>jambu</li>
+    </ul>
+    <ul type="none">
+        <li>mangga</li>
+        <li>jeruk</li>
+        <li>apel</li>
+        <li>semangka</li>
+        <li>jambu</li>
+    </ul>
+
+    <h3>3. Description</h3>
+    <p>description list adalah list yang berisi deskripsi atau penjelasan dari sesuatu</p>
+    <dl>
+        <dt>Mangga</dt>
+        <dd>mangga yaitu buah</dd>
+    </dl>
+
+    <h3>4. List di dalam list [Nested list]</h3>
+    <p></p>
+    <ol>
+        <li>debian
+            <ul>
+                <li>Ubuntu</li>
+                <li>mint</li>
+                <li>elementaryOS</li>
+            </ul>
+        </li>
+        <li>RedHat
+            <ul>
+                <li>Fedora</li>
+            </ul>
+        </li>
+        <li>slackware</li>
+    </ol>
+</body>
+</html>

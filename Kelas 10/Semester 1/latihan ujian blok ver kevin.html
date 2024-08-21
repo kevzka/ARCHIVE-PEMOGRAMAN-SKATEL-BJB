@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(48, 48, 48);
+        }
+
+        .container,
+        .container3 {
+            padding: 5px 20px;
+            box-sizing: border-box;
+            width: 80%;
+            margin: auto;
+        }
+
+        .container {
+            height: 100vh;
+            font-size: 5vw;
+            display: flex;
+            align-items: center;
+        }
+
+        .container2 {
+            width: 100%;
+        }
+
+        .margin {
+            margin-top: -3vw;
+        }
+
+        .container2 h3:nth-child(3) {
+            float: right;
+        }
+
+        .gambar {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-image: url("images/images.jpeg");
+            background-size: cover;
+            animation: gambar 10s forwards infinite ease-in-out;
+        }
+
+        @keyframes gambar {
+            0% {
+                background-image: url("images/images.jpeg");
+            }
+
+            50% {
+                background-image: url("images/rem.jpg");
+            }
+
+            100% {
+                background-image: url("images/images.jpeg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="color: white; background-color: black;">
+        <div class="container2">
+            <div class="logo">
+                <i>
+                </i>
+                <h2>NEON</h2>
+                <h2 class="margin">GENESIS</h2>
+                <h1 class="margin">EVANGELION</h1>
+            </div>
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">EPISODE:25</h3>
+            <h3><s>Do you love me?</s></h3>
+            <!-- <h3>ujian block <s>k**tol</s></h3> -->
+        </div>
+    </div>
+
+    <div class="container3" style="background-color: black; color: white;">
+        <h1>1. belajar tag p paragraf</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, delectus.</p>
+        <br>
+        <h1>2. belajar heading</h1>
+        <p>heading ada 6 yaitu h1-h6 yang dimana h1 adalah ukuran paling besarnya</p>
+        <h1>ini heading 1</h1>
+        <h2>ini heading 2</h2>
+        <h3>ini heading 3</h3>
+        <h4>ini heading 4</h4>
+        <h5>ini heading 5</h5>
+        <h6>ini heading 6</h6>
+        <br>
+        <h1>3. text formatting</h1>
+        <p>text formatting itu ada banyak contohnya: b, strong, i, em, u, ins, s, del, sup, sub, mark, q</p>
+        <h2>a. Membuat teks tebal menggunakan tag b dan strong</h2>
+        <p><strong>teks formatting itu penting</strong> karena dapat membuat tulisan terlihat lebih menarik sehingga
+            akan membuat <b>pengunjung senang</b> membacanya.</p>
+        <br>
+        <h2>b. Membuat teks miring menggunakan tag i italic dan em emphasis</h2>
+        <p>Gunakan <i>teks miring</i> untuk memberikan penekanan pada teks, sehingga akan <em>menarik perhatian</em>
+            pembaca. Biasanya digunakan pada <i>istilah asing</i> atau kata serupa dari <em>bahasa daerah</em>.</p>
+        <br>
+        <h2>c. membuat garis bawah pada teks menggunakan tag u underlinen atau juga ins insert</h2>
+        <p><u>teks formatting itu penting</u>, karena dapat mebuat teks terlihat lebih menarik dibandingkan tanpa
+            formatting <ins>plain text</ins>.</p>
+        <br>
+        <h2>d. membuat teks tercoret menggunakan teks del delete atau s striketrhough</h2>
+        <p>coretlah teks <s>yang tidak di butuhkan terpakai</s>. ini bissa memberitahu pembaca tentang perbaikan dari
+            teks tersebut. kadang juga <del>teks tercoret</del></p>
+        <br>
+        <h3>e. membuat pangkat atas dan membuat pangkat bawah menggunakan tag sup dan sub</h3>
+        <p><sup>untuk membuat pangkat diatas</sup> dan <sub>untuk membuat pangkat di bawah</sub></p>
+        <p>rumus luas persegi asalah S<sup>2</sup>, dimana s adalah sisi dari persegi. lalu O<sub>2</sub> adalah rumus
+            kimia dari oksigen.</p>
+        <br>
+        <h3>f. membuat market untuk teks menggunakan tag mark</h3>
+        <p>marker biasanya digunakan untuk menandai bagian teks yang penting. kalau di dunia nyata, kita
+            <mark>menggunakan stabilo</mark> untuk membuat marker.
+        </p>
+        <br>
+        <h3>g. membuat tanda kutip mengguanakan tag q</h3>
+        <p>Ini adalah contoh kutipan: <q>ini adalah kutipan singkat.</q></p>
+        <br>
+        <h3>h. menggabungkan format teks</h3>
+        <p>penggabungan format teks bisa dilakukan dengan menuliskan tag-tag yang akan dipakai. misalkan <b><u>tebal dan
+                    garis bawah</u></b>, maka kita tinggal pakai tag <b>b</b> dan tag <b>u</b>.</p>
+    </div>
+    
+
+    <div class="container3" style="background-color: black; color: white;">
+        <hr>
+        <h1>belajar 2: Gambar, Link dan List HTML</h1>
+        <br>
+        <h2>1. cara memasukan gambar pada HTML</h2>
+        <p>Berfungsi untuk menambahkan alamat atau tautan yang akan berfungsi redirect halaman website yang kita buat ke
+            alamat yang telah kita sisipkan. HTML link biasa dengan memanfaatkan element a href. berikut contoh
+            pemogramannya</p>
+        <img src="" alt="waifu tidak ditemukan">
+        <img src="images/rem.jpg" alt="rem" width="300px">
+        <div class="gambar"></div>
+        <br>
+        <h2>2. Cara memasukan link</h2>
+        <p>Berfungsi untuk menambahkan alamat atau tautan yang akan berfungsi redirect halaman website yang kita buat ke
+            alamat yang telah kita sisipkan. HTML link biasa dengan memanfaatkan element a href. berikut contoh
+            pemogramannya</p>
+        <p>a. conntoh link internal</p>
+        <p>* link _self</p>
+        <a href="latihan-1.html" target="_self" title="akan diarahkan ke halaman belajar 1">buka link belajar 1</a>
+        <p>* link _blank</p>
+        <a href="latihan-1.html" target="_blank" title="akan diarahkan ke halaman belajar 1">buka link belajar 1</a>
+        <p>b. contoh link eksternal</p>
+        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">link ke w3schools</a>
+        <br>
+        <h2>3. membuat list</h2>
+        <p>list ada 3 yaitu ordered list, unordered list, dan deskripsi</p>
+        <br>
+        <h3>A. ordered List</h3>
+        <p>Ordered List yaitu list yang dibuat secara berurutan dibuat dengan tag ol lalu di dalamnya diisi dengan item
+            yang dimasukkan yang dibuat menggunakann tag li, berikut contoh penggunaan tag ol</p>
+            <br>
+        <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <br>
+        <ol type="a">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <br>
+        <ol type="i">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <br>
+        <ol type="I">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <br>
+
+        <h3>B. Unordered list</h3>
+        <p>unordered list yaitu list yang di buat secara tidak berurutan dibuat dengan tag ul lalu di dalamnya diisi
+            dengan item yang dimasukkan yang di buat menggunakan tag li, berikut contoh penggunaan tag ul</p>
+        <br>
+        <ul type="disc">
+            <li>mangga</li>
+            <li>jeruk</li>
+            <li>apel</li>
+            <li>semangka</li>
+            <li>jambu</li>
+        </ul>
+        <br>
+        <ul type="squre">
+            <li>mangga</li>
+            <li>jeruk</li>
+            <li>apel</li>
+            <li>semangka</li>
+            <li>jambu</li>
+        </ul>
+        <br>
+        <ul type="circle">
+            <li>mangga</li>
+            <li>jeruk</li>
+            <li>apel</li>
+            <li>semangka</li>
+            <li>jambu</li>
+        </ul>
+        <br>
+        <ul type="none">
+            <li>mangga</li>
+            <li>jeruk</li>
+            <li>apel</li>
+            <li>semangka</li>
+            <li>jambu</li>
+        </ul>
+    </div>
+    <!-- <script>
+        const h3awal = document.querySelector('h3:nth-child(3)');
+        const h3akhir = document.querySelector('h3:nth-child(4)');
+        h3akhir.
+        setInterval(() => {
+            teks.innerHTML = 'ujian block <s>k**tol</s>';
+    }, 1000);
+    </script> -->
+</body>
+
+</html>

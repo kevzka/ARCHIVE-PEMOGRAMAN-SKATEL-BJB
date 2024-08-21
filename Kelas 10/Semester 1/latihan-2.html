@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan-2</title>
+</head>
+
+<body>
+    <h1><mark>LATIHAN 2</mark></h1>
+    <i><q>Biodata Diri</q></i>
+    <hr>
+    <p>Nama: kevin apta</p>
+    <p>Umur: 14 tahun</p>
+    <p>TTL: pelaihari, 19 oktober 2009</p>
+    <p>E-mail: kevinapta99@gmail.com</p>
+    <p>No.HP: 083116752250</p>
+    <p>Alamat: jl.rambai tengah</p>
+    <hr>
+    <i><q>Biodata Diri di SMK Telkom Banjarbaru</q></i>
+    <p>NIS: 543241009</p>
+    <p>Nama: kevin apta</p>
+    <p>Kelas: XD</p>
+    <p>Jurusan: RPL</p>
+    <p>Ekskul: PMR dan Club b.inggris</p>
+    <!-- warna heading -->
+    <h1 style="color: red;">Heading Merah</h1>
+    <h2 style="color: yellow;">Heading Kuning</h2>
+    <h3 style="color: green;">Heading Hijau</h3>
+    <h4 style="color: blue;">Heading Biru</h4>
+    <h5 style="color: magenta;">Heading Magenta</h5>
+    <h6 style="color: gray;">Heading Gray</h6>
+    <h1 style="background-color: red;">Background Merah</h1>
+    <h2 style="background-color: yellow;">Background Kuning</h2>
+    <h3 style="background-color: green;">Background hijau</h3>
+    <h4 style="background-color: blue;">Background Biru</h4>
+    <h5 style="background-color: chocolate;">Background Cokelat</h5>
+    <h6 style="background-color: aqua;">Background Aqua</h6>
+    <!-- warna heading ganjil genap -->
+    <h6 id="test" style="background-color: red;">Latar merah</h6>
+    <h6 style="color: red;">Teks merah</h6>
+    <h5 style="background-color: yellow;">Latar kuning</h5>
+    <h5 style="color: yellow;">Teks kuning</h5>
+    <h4 style="background-color: green;">Latar hijau</h4>
+    <h4 style="color: green;">Teks hijau</h4>
+    <h3 style="background-color: blue;">Latar biru</h3>
+    <h3 style="color: blue;">Teks biru</h3>
+    <h2 style="background-color: aqua;">Latar aqua</h2>
+    <h2 style="color: aqua;">Teks aqua</h2>
+    <h1 style="background-color: grey;">Latar grey</h1>
+    <h1 style="color: grey;">Teks grey</h1>
+    <script>
+        var test = document.getElementById('test');
+        var i = 0;
+        var angka = 'true';
+        while(angka == 'true'){
+            var interval = setInterval(function () {
+            if (i >= 256) {
+                clearInterval(interval); // Hentikan interval setelah mencapai 256
+                console.log('selesai');
+                test.style.backgroundColor = 'rgb(' + i + ', 254, 255)';
+                i--;
+            } else {
+                test.style.backgroundColor = 'rgb(' + i + ', 254, 255)';
+                i++;
+            }
+        }, 10);
+        }
+        
+    </script>
+</body>
+
+</html>
